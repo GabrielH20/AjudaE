@@ -1,0 +1,33 @@
+{% extends  'base.html' %}
+{% block content %}
+<div class="bloco-cadastro">
+    <form class="" action="{{url_for('mapa')}}" method="GET">
+        <h3>Cadastro De Instituição</h3>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nome da Instituição</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome" name="nameinst">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Endereço da Instituição</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Endereço" name="endereçoinst">
+          </div>
+          
+          <div class="form-group">
+            <label for="formGroupExampleInput">Donos da Instituição</label>
+            <div class="margin"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Dono 1" name="dono1inst"></div>
+            <div class="margin"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Dono 2" name="dono2inst"></div>
+            <div class="margin"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Dono 3" name="dono3inst"></div>
+            <label for="" class="ps">OBS:Preencher caso aja mais de 1 Dono.</label>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Doação Desejada</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Doações" name="tipodoacao">
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Descrição da Instituição</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="descricaoinst"></textarea>
+        </div>
+        <button type="submit" class="botãologin">Cadastrar</button>
+      </form>
+</div>
+{% endblock %}

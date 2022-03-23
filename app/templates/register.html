@@ -1,0 +1,26 @@
+{% extends  'base.html' %}
+
+{% block content %}
+<div class="blocologin">
+  <img src="../static/img/pc.png" alt="" class="pc">
+  <div class="form">
+    <label for="" class="d-flex justify-content-center ">Registrar Usuário</label>
+    <form action="{{ url_for('register') }}" method="POST">
+      <div class="form-group3">
+        <input type="text" name="name" class="form-control" placeholder="Nome Completo" id="meleca">
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="Senha">
+      </div>
+      <div>
+        <a href="{{ url_for('login') }}" class="d-flex justify-content-center">Já tem uma conta?Clique aqui</a>
+      </div>
+      <button type="submit" class="botãologin">Cadastrar</button>
+    </form>
+  </div>
+  </div>
+  
+{% endblock %}

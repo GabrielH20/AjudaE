@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 10px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius:20px;
+    border: 10px 10px 10px;
+}
+a.activate, a:hover{
+    background: #E2E2E2
+
+}
+.roxomapa{
+    background: linear-gradient(180deg, #7408B8 0%, #2F3DD6 100%);
+}
+
+.checkbtn{
+    font-size:30px;
+    color: black;
+    float: right;
+    line-height:90px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+.zaza{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 710px;
+    top:180px;
+    left: 10%;
+    border-radius: 40px;
+    padding: 32px;
+}
+.zaza p{
+    font-size: 25px;
+}
+.zaza ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.zaza li{
+   
+    border-radius: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.blocologin{
+    background: white;
+    width:1280px ;
+    height: 826px;
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    top: 40px;
+}
+.form-group{
+    width: 380px;
+    
+}
+.form-control2{
+    height: 40px;
+    color: red;
+}
+.form{
+    position: relative;
+    left: 450px;
+    top: 240px;
+}
+.roxo{
+    background:#7408B8;
+}
+.pc{
+    width: 352px;
+    height: 325px;
+   position:relative;
+   left: 214px;
+   top: 200px;
+}
+.blocologin :placeholder{
+    color: red;
+}
+.botãologin{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    border: none;
+    background: #6FB553;
+    color:#FFFFFF;
+    border-radius: 50px;
+    width: 180px;
+    height: 34px;
+}
+input.form-control{
+    border-radius: 50px;
+    background: #C4C4C4;
+}
+.blocoperfil{
+    display: flex;
+    position: relative;
+    background: white;
+    width: 1000px;
+    height: 200px;
+    top: 50px;
+    left: 150px;
+    border-radius:50px;
+}
+.iconeperfil{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    left: 45px;
+}
+.namebloco{
+    position: relative;
+    top: 25px;
+    left: 150px;
+}
+.line{
+    position: relative;
+    left: 80px;
+    top:30px;
+    height: 140px;
+}
+.emailbloco{
+    position: relative;
+    top: 115px;
+    left: 93px;
+}
+.idbloco{
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+.seta{
+    display: flex;
+    position: relative;
+    top: 60px;
+    left: 200px;
+}
+.lixo{
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 1050px;
+}
+.cadastroinst{
+    position: relative;
+    background: white;
+    width: 1000px;
+    height: 85px;
+    top: 40px;
+    left: 150px;
+    border-radius:50px;
+}
+.cadastrolink{
+    position: relative;
+    top: 12px;
+    left: 33px;
+}
+.bloco-cadastro{
+    background: white;
+    width:380px ;
+    height: 826px;
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    top: 40px;
+}
+.cadastinst{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+.margin{
+    margin-top:10px;
+}
+.ps{
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.cadastinst{
+    height: 700px;
+    width: 1180px;
+}
+#html_96f9b75658ed4a6dbbd60356c7e06ccb{
+    width: 50px; height: 60px; display:flex; margin:20px;
+}
+#html_96f9b75658ed4a6dbbd60356c7e06ccb img{
+    display: flex;
+    position: relative;
+    left: -110px;
+}
+#meleca{
+    margin-bottom: 13px;
+}
+.blocksobre{
+    position: relative;
+    background: white;
+    height:800px;
+    width: 1300px;
+    top:60px;   
+}
+.texto{
+    height:260px;
+    width: 800px;
+}
+.pcsobre{
+    position: relative;
+    display: flex;
+    left: 1000px;
+}
+.list-group-item{
+    position: relative;
+    width: 300px;
+    left: 400px;
+    top:150px;
+    margin-top: 30px;
+}
+.blocoperfil1{
+    background: white;
+    width: 250px;
+    height: 800px;
+    position: relative;
+    top: 60px;
+    left: -50px;
+    border-radius: 50px;
+}
+.blocoperfil1 img{
+    left: 75px;
+}
+.avali{
+    position: relative;
+    top: 125px;
+}
+.avali h5{
+    align-items: center;
+    position: relative;
+}
+.avali img{
+    width: 150px;
+    position: relative;
+    left: 50px;
+    top: -45px;
+}
+.contatobloco{
+    position: relative;
+    top: 65px;
+    left: 80px;
+}
+.contatobloco h5{
+    position: relative;
+    left: 7px;
+}
+.blocodados{
+    background: white;
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    top: 140px;
+    left: 530px;
+    border-radius: 50px;
+}
+.blocodados{
+    padding: 60px;
+}
+.blocodados div{
+    margin-top: 23px;
+}
+.descricaodados{
+    width: 700px;
+}
+
+.funcao{
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+}

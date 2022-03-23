@@ -1,0 +1,53 @@
+{% extends  'base.html' %}
+{% block content %}
+<div class="blocoperfil1">
+    <img src="../static/img/icone.png" alt=""  class="iconeperfil">
+    <div class="avali">
+        <h5 class="d-flex justify-content-center">Avaliação</h5>
+        <img src="../static/img/estrela.png" alt="">
+    </div>
+    <div class="contatobloco">
+        <h5>Contato</h5>
+        <p>9XXXX-XXXX</p>
+    </div>
+</div>
+<div class="blocodados">
+    <div class="nomedados">
+        <h5>Nome Instituição</h5>
+        Nome Exemplo
+    </div>
+    <div class="enderecodados">
+        <h5>Endereço</h5>
+        Endereço Exemplo
+    </div>
+    <div class="tipodados">
+        <h5>Tipo de Doação</h5>
+        Comida
+    </div>
+    <div class="donodado"><h5>Dono</h5>Dono Exemplo</div>
+    <div class="donodado"><h5>Dono</h5>Dono Exemplo</div>
+    <div class="donodado"><h5>Dono</h5>Dono Exemplo</div>
+    <div class="descricaodados"><h5>Descrição</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam libero velit atque iste similique ipsam blanditiis deserunt qui quo at, corrupti reprehenderit. A fugit, recusandae atque corrupti veritatis reiciendis!</div>
+</div>
+<div class="funcao">
+    <div class="seta">
+        <a href="{{ url_for('index') }}" class="btn btn-info">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          Voltar
+        </a>
+        <div class="rdo">
+          <a href="{{ url_for('index') }}" class="btn btn-info">
+            <i class="" aria-hidden="true"></i>
+            Modificar
+          </a>
+        </div>
+       
+      </div>
+      <div class="lixo">
+        <a class="btn btn-danger btn-sm" hre="">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </a>
+      </div>
+</div>
+
+{% endblock %}

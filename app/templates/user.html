@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="blocoperfil">
+  <img src="../static/img/icone.png" alt="" class="iconeperfil">
+  <img src="../static/img/Line 129.png" alt="" class="line">
+  <div class="namebloco">
+    <h5>Nome</h5>
+    {{user.name}}
+  </div>
+  <div class="emailbloco">
+    <h5>E-mail</h5>
+    {{user.email}}
+  </div>
+  <div class="idbloco">
+    <h5>Id</h5>
+    {{user.id}}
+  </div>
+</div>
+<div class="seta">
+  <a href="{{ url_for('index') }}" class="btn btn-info">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    Voltar
+  </a>
+
+ 
+</div>
+<div class="lixo">
+  <a class="btn btn-danger btn-sm" href="{{ url_for('delete', id=user.id) }}">
+    <i class="fa fa-trash" aria-hidden="true"></i>
+  </a>
+</div>
+<div class="cadastroinst">
+  <div class="cadastrolink">
+    <h4>Cadastrar Instituição</h4>
+  <p>Olá {{user.name}},se deseja cadastrar uma instituição de caridade basta clicar e preencher as inforamações!
+    <a href="{{url_for('cadastroinst')}}">Cadastrar Instituição</a>
+  </p>
+  </div>
+</div>
+{% endblock %}
